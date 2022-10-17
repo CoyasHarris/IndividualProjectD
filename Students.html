@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    
+    <title>Bootcamp Admnistrator</title>
+</head>
+
+<body>
+        <main>
+        <div class="navbar" >
+                <a href="index.html" >Home</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Courses
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  
+                  <div class="dropdown-content">
+                      <a href="Courses.html">Add</a>
+                      <a href="Courses.html">Edit</a>
+                      <a href="Courses.html">Update</a>
+                  </div>
+                  
+                </div>
+                
+                <div class="dropdown">
+                  <button class="dropbtn">Trainers
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  
+                  <div class="dropdown-content">
+                        <a href="Trainers.html">Add</a>
+                        <a href="Trainers.html">Edit</a>
+                        <a href="Trainers.html">Update</a>
+                    
+                  </div>
+                  
+                </div>
+                <div class="dropdown">
+                        <button class="dropbtn">Students
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content">
+                                <a href="#">Add</a>
+                                <a href="#">Edit</a>
+                                <a href="#">Update</a>
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="dropdown">
+                            <button class="dropbtn">Assignments
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            
+                            <div class="dropdown-content">
+                                <a href="Assignments.html">Add</a>
+                                <a href="Assignments.html">Edit</a>
+                                <a href="Assignments.html">Update</a>
+                              
+                            </div>
+                            
+                          </div>
+                          <div class="dropdown">
+                                <button class="dropbtn">Trainers Per Course
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                
+                                <div class="dropdown-content">
+                                        <a href="Trainers.html">Add</a>
+                                        <a href="Trainers.html">Edit</a>
+                                        <a href="Trainers.html">Update</a>
+                                  
+                                </div>
+                                
+                              </div>
+                              <div class="dropdown">
+                                    <button class="dropbtn">Students Per Course
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    
+                                    <div class="dropdown-content">
+                                            <a href="#">Add</a>
+                                            <a href="#">Edit</a>
+                                            <a href="#">Update</a>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="dropdown">
+                                        <button class="dropbtn">Assignments Per Course
+                                          <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        
+                                        <div class="dropdown-content">
+                                                <a href="Assignments.html">Add</a>
+                                                <a href="Assignments.html">Edit</a>
+                                                <a href="Assignments.html">Update</a>
+                                          
+                                        </div>
+                                        
+                                      </div>
+                          
+              </div> 
+              
+              <h1 id="trainers">Students</h4>
+              
+                    
+        
+                                
+       <div class="inner">
+            <table>
+                Existing Students      
+                <tr>
+                    <td id="head">Name</td>
+                    <td id="head">Surname</td>
+                    <td id="head">Subject</td>
+                    <td id="head">FEES</td>
+                    <td id="head">DOB</td>
+                    
+                </tr>
+                <tD>ΚΩΝΣΤΑΝΤΙΝΟΣ</td>
+                <td>ΚΑΡΑΚΩΣΤΑΣ</td>
+                <td>JAVA</td>
+                <td>2.000</td>
+                <td>30/04/1988</td>
+                
+                <tr>
+                    <tD>ΝΙΚΟΣ</td>
+                      <td>ΠΑΥΛΟΥ</td>
+                      <td>C#</td>
+                      <td>1.500</td>
+                      <td>19/08/1999</td>
+        
+                </tr>
+                <tr>
+                    <tD>ΔΗΜΗΤΡΙΟΣ</td>
+                      <td>ΣΑΡΜΠΕΛΑΣ</td>
+                      <td>PYTHON</td>
+                      <td>1.000</td>
+                      <td>15/05/1985</td>
+                </tr>
+                <tr>
+                    <tD>ΕΥΤΥΧΙΟΣ</td>
+                      <td>ΚΑΡΑΜΠΕΛΑΣ</td>
+                      <td>JAVASCRPIT</td>
+                      <td>1.800</td>
+                      <td>21/03/1983</td>
+                </tr>
+                <tr>
+                    <tD>ΠΑΥΛΟΣ</td>
+                      <td>ΔΗΜΟΥΛΑΚΟΣ</td>
+                      <td>JAVA</td>
+                      <td>2.200</td>
+                      <td>16/07/1979</td>
+                </tr>
+                  </table>
+                </div> 
+
+<form name="forma" >
+  Add a new one:
+  <br>
+  <br>
+        <input type="text" 
+        name="firstname" 
+        maxlength="10"
+        placeholder="Enter Name"
+        required
+        />
+        <br>
+        <form id="forma">
+                <input type="text" 
+                name="Surname" 
+                maxlength="10"
+                placeholder="Enter Surname"
+                required
+                />
+                <br>
+                <form id="forma">
+                        <input type="text" 
+                        name="Subject" 
+                        maxlength="10"
+                        placeholder="Enter Subject"
+                        required
+
+                        />
+                        <br>
+                        <form id="forma">
+                            <input type="number"
+                            name="Fees" 
+                            maxlength="10"
+                            placeholder="Enter Fees"
+                            required
+                            />
+                            <br>
+                            <form id="forma">Date of Birth <br>
+                                <input type="date" 
+                                name="Dob" 
+                                maxlength="10"
+                                placeholder="Enter Date Of Birth"
+                                required
+                                />
+                                <br>
+
+   Are you sure? <input type="checkbox" 
+    name="male" 
+    value="true" 
+    unchecked/>
+    <br>
+    <input type="submit" onclick="validateName() ; validateFees()">
+    <div id="msg_error"></div>
+    <div id="msg_errorFees"></div>
+                            
+    </div>
+    <br>
+    <br>
+    <br>
+    Add to Course :
+    <br>
+    <select name="stuff">
+    
+        <option value="0">Choose Course</option>
+        <option value="1">CB11/JAVA/FULL-TIME</option>
+        <option value="2">CB12/PYTHON/PART-TIME</option>
+        <option value="3">CB13/C#/FULL-TIME</option>
+        <option value="3">CB14/C#/PART-TIME</option>
+        </select><br>
+        <INput type="submit"></INput>
+
+
+
+
+
+</form>
+                
+
+              
+
+                  </div> 
+    
+    
+    
+
+            
+   
+
+
+    </main>
+
+
+
+    
+
+
+    <footer>Contact us</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

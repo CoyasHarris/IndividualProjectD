@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    
+    <title>Bootcamp Admnistrator</title>
+</head>
+
+<body>
+        <main>
+        <div class="navbar" >
+                <a href="index.html" >Home</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Courses
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  
+                  <div class="dropdown-content">
+                        <a href="Courses.html">Add</a>
+                        <a href="Courses.html">Edit</a>
+                        <a href="Courses.html">Update</a>
+                  </div>
+                  
+                </div>
+                
+                <div class="dropdown">
+                  <button class="dropbtn">Trainers
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  
+                  <div class="dropdown-content">
+                        <a href="Trainers.html">Add</a>
+                        <a href="Trainers.html">Edit</a>
+                        <a href="Trainers.html">Update</a>
+                    
+                  </div>
+                  
+                </div>
+                <div class="dropdown">
+                        <button class="dropbtn">Students
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content">
+                                <a href="Students.html">Add</a>
+                                <a href="Students.html">Edit</a>
+                                <a href="Students.html">Update</a>
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="dropdown">
+                            <button class="dropbtn">Assignments
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            
+                            <div class="dropdown-content">
+                                    <a href="#">Add</a>
+                                    <a href="#">Edit</a>
+                                    <a href="#">Update</a>
+                              
+                            </div>
+                            
+                          </div>
+                          <div class="dropdown">
+                                <button class="dropbtn">Trainers Per Course
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                
+                                <div class="dropdown-content">
+                                        <a href="Trainers.html">Add</a>
+                                        <a href="Trainers.html">Edit</a>
+                                        <a href="Trainers.html">Update</a>
+                                  
+                                </div>
+                                
+                              </div>
+                              <div class="dropdown">
+                                    <button class="dropbtn">Students Per Course
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    
+                                    <div class="dropdown-content">
+                                            <a href="Students.html">Add</a>
+                                            <a href="Students.html">Edit</a>
+                                            <a href="Students.html">Update</a>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="dropdown">
+                                        <button class="dropbtn">Assignments Per Course
+                                          <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        
+                                        <div class="dropdown-content">
+                                                <a href="#">Add</a>
+                                                <a href="#">Edit</a>
+                                                <a href="#">Update</a>
+                                          
+                                        </div>
+                                        
+                                      </div>
+                          
+              </div> 
+              
+              <h1 id="trainers">Assignments</h4>
+              
+                    
+        
+                                
+       <div class="inner">
+            <table>
+                Existing Assignments      
+                <tr>
+                    <td id="head">Title</td>
+                    <td id="head">Descr.</td>
+                    <td id="head">subDate</td>
+                    <td id="head">OralMark</td>
+                    <td id="head">TotalMark</td>
+                    
+                </tr>
+                <tD>Proj A</td>
+                <td>Make Private School</td>
+                <td>10/01/2021</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <tr>
+                    <tD>Proj B</td>
+                      <td>Make Pet Shop</td>
+                      <td>11/07/2021</td>
+                      <td>0</td>
+                      <td>0</td>
+        
+                </tr>
+                <tr>
+                    <tD>Proj C</td>
+                      <td>Make Bet App</td>
+                      <td>30/06/2021</td>
+                      <td>0</td>
+                      <td>0</td>
+                </tr>
+                <tr>
+                    <tD>Proj D</td>
+                      <td>Make E-shop</td>
+                      <td>10/05/2021</td>
+                      <td>0</td>
+                      <td>0</td>
+                </tr>
+                
+                  </table>
+                </div> 
+
+<form name="forma">
+  Add a new one:
+  <br>
+  <br>
+        <input type="text" 
+        name="Title" 
+        maxlength="25"
+        placeholder="Enter Title"
+        required
+        />
+        <br>
+        <form id="forma">
+                <input type="text" 
+                name="Description" 
+                maxlength="25"
+                placeholder="Enter Description"
+                required
+                />
+                <br><br>
+                <form id="forma">Submission Date 
+                  <br>
+                        <input type="date" 
+                        name="firstname" 
+                        placeholder="Enter Submission Date"
+                        required
+                        />
+                        <br>
+                        <form id="forma">
+                            <input type="number" 
+                            name="OralMark" 
+                            max="10"
+                            placeholder="Enter OralMark"
+                            required
+                            />
+                            <br>
+                            <form id="forma">
+                                <input type="number" 
+                                name="TotalMark" 
+                                max="10"
+                                placeholder="Enter TotalMark"
+                                required
+                                />
+                                <br>
+
+   Are you sure? <input type="checkbox" 
+    name="male" 
+    value="true" 
+    unchecked/>
+    <br>
+    <input type="submit" onclick="validateAssignValues() ; validateMark()">
+    <div id="msg_errorAss"></div>
+    <div id="msg_errorMark"></div>
+
+    </div>
+<br><br>
+    Add to Course :
+    <br>
+    <select name="stuff">
+    
+        <option value="0">Choose Course</option>
+        <option value="1">CB11/JAVA/FULL-TIME</option>
+        <option value="2">CB12/PYTHON/PART-TIME</option>
+        <option value="3">CB13/C#/FULL-TIME</option>
+        <option value="3">CB14/C#/PART-TIME</option>
+        </select><br>
+        <INput type="submit"></INput>
+
+
+
+</form>
+                
+
+              
+
+                  </div> 
+    
+    
+    
+
+            
+   
+
+
+    </main>
+
+
+
+    
+
+
+    <footer>Contact us</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
